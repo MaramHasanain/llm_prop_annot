@@ -6,16 +6,16 @@ In this repo we release full human annotations, consolidated gold labels, and an
 ## Overview
 <p align="center">
 <picture>
-<img alt = "Existing span-level annotation process requiring human annotators and expert consolidators, while our proposed solution uses GPT-4 to support annotation and consolidation." src="" width="510" height="160"/>
+<img alt = "Existing span-level annotation process requiring human annotators and expert consolidators, while our proposed solution uses GPT-4 to support annotation and consolidation." src="https://github.com/user-attachments/assets/2744ef4d-3ec4-4939-97d3-5c188a100075", width="460" height="400"/>
 </picture>
 </p>
 
 
-Our repo provides the following scripts:
+**Our repo provides the following scripts:**
 - chatgpt4_prop_detection_annot.py: a script to run GPT-4 as an annotator in different annotation roles.
 - span_detect_eval.py: evaluation script computing modified F1 score between gold and predicted propaganda spans. 
 
-To run chatgpt4_prop_detection_annot.py:
+**To run chatgpt4_prop_detection_annot.py:**
 ```bash
 python scripts/chatgpt4_prop_detection_annot.py --input_file annotations/human/ArMPro_span_train_full-annotations.jsonl --output_file gpt4_predictions.jsonl --err_output_file error_cases.jsonl --role annot --env gpt4_keys.env
 ```
@@ -28,7 +28,7 @@ python scripts/chatgpt4_prop_detection_annot.py --input_file annotations/human/A
 - `--role` LLM annotation role. Possible options: annot | select | cons .
 - `--env` API key file.
 
-To run span_detect_eval.py:
+**To run span_detect_eval.py:**
 ```bash
 python scripts/span_detect_eval.py --gold_file annotations/human/ArMPro_span_train.jsonl --pred_file gpt4_predictions.jsonl
 ```
