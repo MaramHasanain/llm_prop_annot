@@ -46,6 +46,9 @@ python scripts/span_detect_eval.py --gold_file annotations/human/ArMPro_span_tra
 
 Please cite our paper when referring to this work:
 
+- Maram Hasanain, Fatema Ahmad, and Firoj Alam. 2024. Large Language Models for Propaganda Span Annotation. In Findings of the Association for Computational Linguistics: EMNLP 2024, pages 14522–14532, Miami, Florida, USA. Association for Computational Linguistics.
+
+
 ```
 @inproceedings{hasanain-etal-2024-large,
     title = "Large Language Models for Propaganda Span Annotation",
